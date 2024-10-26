@@ -1,7 +1,9 @@
 eCommerce Web Application
+
 This is a public eCommerce web application built using the MERN (MongoDB, Express.js, React, Node.js) stack.
 
 Table of Contents
+
 =>Features
 =>Technologies
 =>Installation
@@ -10,6 +12,7 @@ Table of Contents
 =>Contributing
 
 Features:
+
 - User authentication and authorization (login, signup)
 - Product listing with category filtering and search
 - Shopping cart with dynamic updates
@@ -19,6 +22,7 @@ Features:
 
 
   Technologies:
+  
    Frontend: React, React Router, Axios
    Backend: Node.js, Express.js
    Database: MongoDB
