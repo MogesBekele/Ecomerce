@@ -1,0 +1,180 @@
+
+body{
+  margin: 0;
+  background-color: aliceblue;
+  padding-top: 150px;
+  width: 100%;
+  position: relative;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+@media (max-width:686px) {
+  .grid-container{
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto; 
+  }
+  .add-product{
+    width: 80%;
+  }
+}
+
+/*
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+
+}
+
+
+}
+
+@media (max-width: 668px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+  
+    
+  }
+  .grid-container-list{
+    width: 80%;
+  }
+  
+  
+  .container {
+    width: 80%;
+    
+    
+    
+  }
+  body{
+    margin: 0;
+    background-color: aliceblue;
+    padding-top: 150px;
+    width: 100%;
+    position: relative;
+  }
+
+.header{
+  background-color: #e48749;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  z-index: 999;
+  
+  
+ }
+  
+  .add-product{
+    width: 400px;
+  }
+
+  .menu{
+    display: block;
+    color: white;
+    padding-right: 30px;
+  }
+  .header-list{
+    display: none;
+  }
+
+}
+
+
+
+
+
+*/
+
+
+
+/* login css begin*/
+
+.container{
+  height: 500px;
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid tomato;
+  margin-top: 40px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.container form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 80%;
+   
+}
+
+
+.container form label{
+  font-size: 20px;
+  padding-right: 20px;
+
+}
+.container form input{
+  padding: 7px;
+  width: 100%;
+  border: 1px solid tomato;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-left: 10px;
+  
+}
+
+.container form button{
+  padding: 10px;
+  border: none;
+  background-color: tomato;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 20px;
+}
+/* login css end*/
+
+@media (max-width:686px) {
+  .container{
+    width: 80%;
+  }
+}
+
+

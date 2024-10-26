@@ -1,0 +1,175 @@
+
+
+
+body {
+  margin: 0;
+  padding-top: 150px; /* Default padding for large screens */
+  background-color: aliceblue;
+  width: 100%;
+  position: relative;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Fix the cart position */
+.cart-link {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  position: absolute;
+  top: 5px;
+  right: 30px; /* Set a fixed position so it doesn't move with the menu */
+  z-index: 1000; /* Ensure it stays above the menu */
+}
+/* Header styling */
+.header {
+  background-color: #e48749;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  z-index: 999;
+  height: 50px; /* Ensure consistent height */
+  
+}
+.menu-icon{
+  display: none;
+  padding-right: 30px;
+}
+
+.header-title {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header-logout {
+  color: white;
+  background-color: inherit;
+  padding: 5px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  
+}
+
+.header-cart {
+  padding: 10px;
+  background-color: #e48749;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+
+/* Responsive styles for small screens */
+@media (max-width: 668px) {
+  body {
+    padding-top: 150px; /* Adjust padding based on header height */
+  }
+
+  .header {
+    display: flex;
+    height: 50px; /* Explicitly set header height */
+    background-color: #e48749;
+    justify-content: space-between;
+    padding: 10px;
+
+    
+  }
+
+  .menu-icon{
+    display: block;
+    padding-right: 30px;
+    padding-left: 20px;
+  }
+
+  .header-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Position the menu below the header */
+    background-color: #e48749;
+    border-bottom-left-radius: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease; 
+   
+  }
+
+  .header-list.show-menu {
+    display: flex;
+    width: 40%;
+    padding: 15px;
+    gap: 10px;
+    text-align: right;
+    right: 0;
+    max-height: 85vh;
+    
+    
+  }
+  
+  
+  
+
+  .header-link,
+  .header-logout
+   {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 95%;
+    background-color: #e48749;
+    border-bottom: 2px solid tomato;
+    border-radius: 30px;
+    
+
+  }
+
+  .header-link:hover,
+  .header-logout:hover
+   {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 95%;
+    background-color: tomato;
+
+  }
+  /* Ensure the cart button stands out */
+  .header-cart {
+     background-color: #e48749;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    display: none;
+    
+
+    
+  }
+}
